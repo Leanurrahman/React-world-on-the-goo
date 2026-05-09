@@ -1,0 +1,239 @@
+<!-- Tailwind CSS vs Normal CSS: A Comparison
+This document provides a comparison between Normal CSS and Tailwind CSS. It shows how common styling properties can be achieved using both approaches.
+1. Text color, size, and weight
+Normal CSS
+
+.title {
+  color: blue;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+Tailwind CSS
+
+<h1 class="text-blue-500 text-2xl font-bold">Hello</h1>
+
+Explanation
+
+In Tailwind CSS, we can achieve text color, size, and weight by using utility classes like 'text-blue-500', 'text-2xl', and 'font-bold'. 
+Normal CSS requires explicit styling using the 'color', 'font-size', and 'font-weight' properties.
+
+2. Background Color
+Normal CSS
+
+.box {
+  background-color: red;
+}
+
+Tailwind CSS
+
+<div class="bg-red-500">Box</div>
+
+3. Margin and Padding
+Normal CSS
+
+.box {
+  margin: 20px;
+  padding: 16px;
+}
+
+Tailwind CSS
+
+<div class="m-5 p-4">Box</div>
+
+4. Width and Height
+Normal CSS
+
+.card {
+  width: 300px;
+  height: 200px;
+}
+
+Tailwind CSS
+
+<div class="w-[300px] h-[200px]">Card</div>
+
+5. Border, Radius, Shadow
+Normal CSS
+
+.card {
+  border: 1px solid gray;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+Tailwind CSS
+
+<div class="border border-gray-300 rounded-xl shadow-md">
+  Card
+</div>
+
+6. Flexbox
+Normal CSS
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+Tailwind CSS
+
+<div class="flex justify-center items-center gap-5">
+  <div>Item 1</div>
+  <div>Item 2</div>
+</div>
+
+7. Grid
+Normal CSS
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+Tailwind CSS
+
+<div class="grid grid-cols-3 gap-4">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+8. Button Design
+Normal CSS
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: darkblue;
+}
+
+Tailwind CSS
+
+<button class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+  Click Me
+</button>
+
+9. Card Design
+Normal CSS
+
+<div class="card">
+  <h2>Product Name</h2>
+  <p>Price: $50</p>
+  <button>Buy Now</button>
+</div>
+
+Tailwind CSS
+
+<div class="w-[300px] p-5 border border-gray-300 rounded-xl shadow-md">
+  <h2 class="text-xl font-bold">Product Name</h2>
+  <p class="text-gray-600 mt-2">Price: $50</p>
+  <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+    Buy Now
+  </button>
+</div>
+
+10. Responsive Design
+Normal CSS
+
+.card {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 50%;
+  }
+}
+
+Tailwind CSS
+
+<div class="w-full md:w-1/2">
+  Responsive Card
+</div>
+
+11. Form Input
+Normal CSS
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
+Tailwind CSS
+
+<input 
+  class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+  type="text" 
+  placeholder="Enter name"
+/>
+
+12. Center a Div
+Normal CSS
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+Tailwind CSS
+
+<div class="flex justify-center items-center h-screen">
+  <div>Centered Box</div>
+</div>
+
+13. Full Simple React Example with Tailwind
+
+function App() {
+  return (
+    <div className="min-h-screen bg-gray-100 flex justify-center items-center">
+      <div className="bg-white w-[350px] p-6 rounded-xl shadow-md">
+        <h1 className="text-2xl font-bold text-blue-600">
+          Product Card
+        </h1>
+
+        <p className="text-gray-600 mt-3">
+          This is a simple product card using Tailwind CSS.
+        </p>
+
+        <button className="mt-5 bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+          Buy Now
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+Normal CSS Example
+
+import "./App.css";
+
+function App() {
+  return (
+    <div className="page">
+      <div className="card">
+        <h1>Product Card</h1>
+        <p>This is a simple product card using normal CSS.</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  );
+}
+
+export default App; -->
